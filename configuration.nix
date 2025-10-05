@@ -43,6 +43,43 @@
     variant = "";
   };
 
+  # Disable X11 server (Hyprland is Wayland)
+  services.xserver.enable = false;
+
+  # Hyprland (Wayland compositor)
+  programs.hyprland.enable = true;
+
+  # Wayland desktop plumbing (portals)
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [
+    pkgs.xdg-desktop-portal-hyprland
+    pkgs.xdg-desktop-portal-gtk
+  ];
+
+  # GPU/graphics stack
+  hardware.graphics.enable = true;
+
+  # Login manager (tuigreet on TTY, launches Hyprland)
+  services.greetd.enable = true;
+  services.greetd.settings = {
+    default_session = {
+      command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd Hyprland";
+      user = "greeter";
+    };
+  };
+
+  # Audio (PipeWire + WirePlumber)
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    wireplumber.enable = true;
+  };
+
+  # Recommended Wayland env for Electron/Chromium apps
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.axel = {
     isNormalUser = true;
@@ -62,12 +99,10 @@
     git
   ];
 
-  # List services that you want to enable:
-
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
-  # Open ports in the firewall.
+  # Firewall
   networking.firewall.allowedTCPPorts = [ 22 ];
   networking.firewall.enable = true;
 
