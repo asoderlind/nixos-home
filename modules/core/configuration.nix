@@ -37,15 +37,6 @@
     LC_TIME = "sv_SE.UTF-8";
   };
 
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
-
-  # Disable X11 server (Hyprland is Wayland)
-  services.xserver.enable = false;
-
   # Wayland desktop plumbing (portals)
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [
@@ -56,20 +47,8 @@
   # GPU/graphics stack
   hardware.graphics.enable = true;
 
-  # Audio (PipeWire + WirePlumber)
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    wireplumber.enable = true;
-  };
-
   # Recommended Wayland env for Electron/Chromium apps
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
 
   # Firewall
   networking.firewall.allowedTCPPorts = [ 22 ];

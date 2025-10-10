@@ -10,6 +10,7 @@
     ./packages.nix
     ./user.nix
     ./greetd.nix
+    ./services.nix
     #./stylix.nix
     # inputs.stylix.nixosModules.stylix
   ];
