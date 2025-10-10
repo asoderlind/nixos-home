@@ -28,7 +28,8 @@
           inherit profile;
         };
         modules = [
-          ./modules/core
+          ./profiles/nvidia-laptop
+          # ./modules/core
         ];
       };
     };

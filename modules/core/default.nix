@@ -6,7 +6,6 @@
 {
   imports = [
     ./configuration.nix
-    ./hardware-configuration.nix
     ./packages.nix
     ./user.nix
     ./greetd.nix
