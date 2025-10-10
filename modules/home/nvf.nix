@@ -8,6 +8,7 @@
 
   programs.nvf = {
     enable = true;
+    defaultEditor = true; # Set as default editor
 
     settings.vim = {
       lsp.enable = true;

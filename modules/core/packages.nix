@@ -5,10 +5,11 @@
 }:
 {
   programs = {
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-    };
+    # Neovim is configured via nvf in home-manager (modules/home/nvf.nix)
+    # neovim = {
+    #   enable = true;
+    #   defaultEditor = true;
+    # };
     firefox.enable = false; # Firefox is not installed by default
     hyprland = {
       enable = true; # set this so desktop file is created
