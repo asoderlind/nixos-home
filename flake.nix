@@ -13,8 +13,7 @@
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
-          ./configuration.nix
-          ./hardware-configuration.nix
+          ./core
         ];
       };
     };
