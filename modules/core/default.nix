@@ -8,6 +8,8 @@
     ./configuration.nix
     ./hardware-configuration.nix
     ./packages.nix
-    ./stylix.nix
+    ./user.nix
+    #./stylix.nix
+    #inputs.stylix.nixosModules.stylix
   ];
 }

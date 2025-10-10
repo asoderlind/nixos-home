@@ -26,7 +26,6 @@
         inherit system;
         modules = [
           ./modules/core
-          ./modules/home
         ];
       };
     };

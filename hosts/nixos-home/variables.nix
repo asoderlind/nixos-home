@@ -37,6 +37,8 @@
   # or as a flatpak
   browser = "firefox";
 
+  gitUsername = "asoderlind";
+
   # Available Options:
   # Kitty, ghostty, wezterm, aalacrity
   # Note: kitty, wezterm, alacritty have to be enabled in `variables.nix`

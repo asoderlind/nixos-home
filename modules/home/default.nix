@@ -39,11 +39,4 @@
     ./browser/firefox.nix
     ./wm
   ];
-
-  home.stateVersion = "25.05"; # Please read the comment before changing.
-  programs.home-manager.enable = true;
-  news.display = "silent";
-
-  fonts.fontconfig.enable = true;
-
 }
