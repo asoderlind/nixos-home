@@ -1,11 +1,12 @@
-{
-  config,
-  pkgs,
-  ...
+{ 
+config
+, pkgs
+, ...
 }:
 let
   host = "nixos-home";
-  inherit (import ../../../hosts/${host}/variables.nix)
+  inherit
+    (import ../../../hosts/${host}/variables.nix)
     extraMonitorSettings
     keyboardLayout
     stylixImage
@@ -32,8 +33,8 @@ in
       source = ../../../wallpapers;
       recursive = true;
     };
-    # ".face.icon".source = ./face.jpg;
-    # ".config/face.jpg".source = ./face.jpg;
+    ".face.icon".source = ./face.png;
+    ".config/face.jpg".source = ./face.png;
   };
   wayland.windowManager.hyprland = {
     enable = true;
@@ -83,6 +84,8 @@ in
         gaps_out = 8;
         border_size = 2;
         resize_on_border = true;
+        "col.active_border" = "rgb(${config.lib.stylix.colors.base08}) rgb(${config.lib.stylix.colors.base0C}) 45deg";
+        "col.inactive_border" = "rgb(${config.lib.stylix.colors.base01})";
       };
 
       misc = {
@@ -94,7 +97,7 @@ in
         disable_splash_rendering = true;
         enable_swallow = false;
         vfr = true; # Variable Frame Rate
-        vrr = 2; # Variable Refresh Rate  Might need to set to 0 for NVIDIA/AQ_DRM_DEVICES
+        vrr = 2; #Variable Refresh Rate  Might need to set to 0 for NVIDIA/AQ_DRM_DEVICES
         # Screen flashing to black momentarily or going black when app is fullscreen
         # Try setting vrr to 0
 
@@ -122,7 +125,7 @@ in
           enabled = true;
           range = 4;
           render_power = 3;
-          # color = "rgba(1a1a1aee)";
+          color = "rgba(1a1a1aee)";
         };
       };
 
@@ -161,12 +164,11 @@ in
     extraConfig = "
       monitor=,preferred,auto,auto
       monitor=Virtual-1,1920x1080@60,auto,1
-      ${
-            extraMonitorSettings
-          }
+      ${extraMonitorSettings}
       # To enable blur on waybar uncomment the line below
       # Thanks to SchotjeChrisman
       #layerrule = blur,waybar
     ";
   };
 }
+
