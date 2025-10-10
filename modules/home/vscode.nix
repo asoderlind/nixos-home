@@ -15,11 +15,13 @@
           tamasfe.even-better-toml # toml language support
           zainchen.json # json language support
           shd101wyy.markdown-preview-enhanced # markdown preview
+          brettm12345.nixfmt-vscode # Nix formatting
         ];
         userSettings = {
           # General
           "editor.fontSize" = 16;
           "editor.fontFamily" = "'Jetbrains Mono', 'monospace', monospace";
+          "editor.formatOnSave" = true;
           "terminal.integrated.fontSize" = 14;
           "terminal.integrated.fontFamily" = "'JetBrainsMono Nerd Font', 'monospace', monospace";
           "editor.multiCursorModifier" = "ctrlCmd";
