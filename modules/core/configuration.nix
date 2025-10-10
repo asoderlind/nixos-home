@@ -56,15 +56,6 @@
   # GPU/graphics stack
   hardware.graphics.enable = true;
 
-  # Login manager (tuigreet on TTY, launches Hyprland)
-  services.greetd.enable = true;
-  services.greetd.settings = {
-    default_session = {
-      command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd Hyprland";
-      user = "greeter";
-    };
-  };
-
   # Audio (PipeWire + WirePlumber)
   services.pipewire = {
     enable = true;
