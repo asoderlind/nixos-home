@@ -5,7 +5,7 @@
   # `tui` for Text login
   # `sddm` for graphical GUI (default)
   # SDDM background is set with stylixImage
-  # displayManager = "sddm";
+  displayManager = "sddm";
 
   # Emable/disable bundled applications
   # tmuxEnable = false;

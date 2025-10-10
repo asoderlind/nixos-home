@@ -19,7 +19,7 @@
     ./stylix.nix
     ./tmux.nix
     ./vscode.nix
-    ./waybar/waybar-simple.nix
+    ./waybar/waybar-dwm.nix
     ./wlogout
     ./xdg.nix
     ./zsh.nix
