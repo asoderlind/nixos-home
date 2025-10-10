@@ -8,6 +8,7 @@
   # Import modules
   imports = [
     ./firefox
+    ./fzf.nix
     ./git.nix
     ./htop.nix
     ./hyprland
