@@ -8,5 +8,6 @@
     ./hyprland.nix
     ./pyprland.nix
     ./hypridle.nix
+    ./hyprlock.nix
   ];
 }
