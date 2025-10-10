@@ -1,10 +1,9 @@
 { host, ... }:
 let
-  #inherit
-  #  (import ../../hosts/${host}/variables.nix)
-  #  stylixImage
-  #  ;
-  stylixImage = "../../../wallpapers/mountainscape.jpg";
+  inherit
+    (import ../../../hosts/${host}/variables.nix)
+    stylixImage
+    ;
 in
 {
   wayland.windowManager.hyprland.settings = {
