@@ -13,8 +13,11 @@
     ./htop.nix
     ./hyprland
     ./kitty.nix
+    # ./nvf.nix
+    ./rofi
+    ./scripts
+    ./stylix.nix
     ./tmux.nix
-    ./vim.nix
     ./vscode.nix
     ./waybar/waybar-simple.nix
     ./wlogout
