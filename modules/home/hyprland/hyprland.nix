@@ -1,10 +1,10 @@
 {
   config,
   pkgs,
+  host,
   ...
 }:
 let
-  host = "nixos-home";
   inherit (import ../../../hosts/${host}/variables.nix)
     extraMonitorSettings
     keyboardLayout

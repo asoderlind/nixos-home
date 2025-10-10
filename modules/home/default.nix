@@ -13,7 +13,7 @@
     ./htop.nix
     ./hyprland
     ./kitty.nix
-    # ./nvf.nix
+    ./nvf.nix
     ./rofi
     ./scripts
     ./stylix.nix

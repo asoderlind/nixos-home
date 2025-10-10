@@ -2,10 +2,10 @@
   pkgs,
   lib,
   config,
+  host,
   ...
 }:
 let
-  host = "nixos-home";
   inherit (import ../../../hosts/${host}/variables.nix) clock24h;
 in
 with lib;

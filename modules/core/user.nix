@@ -1,13 +1,13 @@
 {
   pkgs,
   inputs,
+  host,
+  username,
+  profile,
   ...
 }:
 let
-  host = "nixos-home";
-  gitUsername = "asoderlind";
-  username = "axel";
-  #inherit (import ../../hosts/${host}/variables.nix) gitUsername;
+  inherit (import ../../hosts/${host}/variables.nix) gitUsername;
 in
 {
   imports = [ inputs.home-manager.nixosModules.home-manager ];
@@ -15,7 +15,7 @@ in
     useUserPackages = true;
     useGlobalPkgs = false;
     backupFileExtension = "backup";
-    # extraSpecialArgs = { inherit inputs username host profile; };
+    extraSpecialArgs = { inherit inputs username host profile; };
     users.${username} = {
       imports = [ ./../home ];
       home = {
