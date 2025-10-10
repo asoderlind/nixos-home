@@ -135,6 +135,8 @@ in
           inputs.firefox-addons.packages."x86_64-linux".ublock-origin
           inputs.firefox-addons.packages."x86_64-linux".sponsorblock
           inputs.firefox-addons.packages."x86_64-linux".return-youtube-dislikes
+          inputs.firefox-addons.packages."x86_64-linux".vimium
+          inputs.firefox-addons.packages."x86_64-linux".darkreader
           extra-extensions.rys
         ];
         userChrome = ''
@@ -149,6 +151,7 @@ in
           "xpinstall.signatures.required" = false; # Make extensions work
           # "browser.uidensity" = 0; # Set UI density to normal
           # "svg.context-properties.content.enabled" = true; # Enable SVG context-propertes
+          "browser.startup.homepage" = "https://news.ycombinator.com"; # Set homepage to Hacker News
         };
       };
     };
