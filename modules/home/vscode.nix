@@ -48,6 +48,8 @@
             "<C-f>" = false;
             "<C-p>" = false;
           };
+          "vim.useSystemClipboard" = true;
+          "keyboard.dispatch" = "keyCode"; # This makes VSCode respect system keyboard mappings
         };
       };
     };
