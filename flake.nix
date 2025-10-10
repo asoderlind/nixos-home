@@ -1,5 +1,5 @@
 {
-  description = "My NixOS connfiguration";
+  description = "My NixOS configuration";
 
   inputs = {
     home-manager = {
@@ -36,7 +36,6 @@
         };
         modules = [
           ./profiles/nvidia-laptop
-          # ./modules/core
         ];
       };
     };
