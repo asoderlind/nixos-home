@@ -14,7 +14,7 @@
     ./system.nix
     ./network.nix
     ./xserver.nix
-    #./stylix.nix
-    # inputs.stylix.nixosModules.stylix
+    ./stylix.nix
+     inputs.stylix.nixosModules.stylix
   ];
 }
