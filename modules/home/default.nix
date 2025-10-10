@@ -35,7 +35,7 @@
     ./shell/zsh.nix
     ./editor/vim.nix
     ./terminal/kitty.nix
-    ./waybar/waybar-simple.nix
+    #./waybar/waybar-simple.nix
     ./browser/firefox.nix
     ./wm
   ];

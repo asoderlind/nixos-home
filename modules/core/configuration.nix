@@ -77,17 +77,6 @@
   # Recommended Wayland env for Electron/Chromium apps
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.axel = {
-    isNormalUser = true;
-    description = "axel";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-    ];
-    packages = with pkgs; [ ];
-  };
-
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 

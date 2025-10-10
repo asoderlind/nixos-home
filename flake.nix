@@ -24,6 +24,7 @@
     in {
       nixosConfigurations."axel@nixos-home" = nixpkgs.lib.nixosSystem {
         inherit system;
+        specialArgs = { inherit inputs; };
         modules = [
           ./modules/core
         ];
