@@ -1,4 +1,5 @@
-{ username, ... }: {
+{ username, ... }:
+{
   services.syncthing = {
     enable = false;
     user = "${username}";
@@ -6,4 +7,3 @@
     configDir = "/home/${username}/.config/syncthing";
   };
 }
-

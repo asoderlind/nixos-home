@@ -1,12 +1,12 @@
 { host, ... }:
 let
-#  inherit
-#    (import ../../hosts/${host}/variables.nix)
-#    browser
-#    terminal
-#    ;
-  terminal="kitty";
-  browser="firefox";
+  #  inherit
+  #    (import ../../hosts/${host}/variables.nix)
+  #    browser
+  #    terminal
+  #    ;
+  terminal = "kitty";
+  browser = "firefox";
 in
 {
   wayland.windowManager.hyprland.settings = {
@@ -109,4 +109,3 @@ in
     ];
   };
 }
-

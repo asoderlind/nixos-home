@@ -26,7 +26,6 @@
   # Inside the quotes, create a new line for each monitor.
   extraMonitorSettings = "";
 
-
   # Waybar Settings
   clock24h = true;
 
@@ -108,4 +107,3 @@
   # Otherwise leave as-is
   hostId = "5ab03f50";
 }
-

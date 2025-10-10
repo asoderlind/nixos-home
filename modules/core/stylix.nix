@@ -1,6 +1,7 @@
-{ pkgs
-, host
-, ...
+{
+  pkgs,
+  host,
+  ...
 }:
 let
   inherit (import ../../hosts/${host}/variables.nix) stylixImage;
@@ -39,4 +40,3 @@ in
     };
   };
 }
-

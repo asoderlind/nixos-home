@@ -6,6 +6,7 @@
 {
   imports = [
     ./boot.nix
+    ./fonts.nix
     ./greetd.nix
     ./hardware.nix
     ./network.nix
@@ -19,6 +20,6 @@
     # ./quickshell.nix -- not implemented yet
     ./virtualisation.nix
     ./xserver.nix
-     inputs.stylix.nixosModules.stylix
+    inputs.stylix.nixosModules.stylix
   ];
 }

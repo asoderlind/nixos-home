@@ -1,8 +1,10 @@
 # NH is a modern helper utility that implements tools from the NixOS ecosystem
-{ pkgs
-, username
-, ...
-}: {
+{
+  pkgs,
+  username,
+  ...
+}:
+{
   programs.nh = {
     enable = true;
     clean = {
@@ -17,4 +19,3 @@
     nvd
   ];
 }
-

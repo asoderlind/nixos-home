@@ -1,13 +1,15 @@
-{ pkgs
-, lib
-, config
-, ...
+{
+  pkgs,
+  lib,
+  config,
+  ...
 }:
 let
   host = "nixos-home";
   inherit (import ../../../hosts/${host}/variables.nix) clock24h;
 in
-with lib; {
+with lib;
+{
   # Configure & Theme Waybar
   programs.waybar = {
     enable = true;
@@ -52,10 +54,7 @@ with lib; {
           on-scroll-down = "hyprctl dispatch workspace e-1";
         };
         "clock" = {
-          format =
-            if clock24h == true
-            then '' {:L%H:%M}''
-            else '' {:L%I:%M %p}'';
+          format = if clock24h == true then '' {:L%H:%M}'' else '' {:L%I:%M %p}'';
           tooltip = true;
           tooltip-format = "<big>{:%A, %d.%B %Y }</big>\n<tt><small>{calendar}</small></tt>";
         };
@@ -303,4 +302,3 @@ with lib; {
     ];
   };
 }
-

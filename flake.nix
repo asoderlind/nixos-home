@@ -11,18 +11,25 @@
     stylix.url = "github:danth/stylix/release-25.05";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      ...
+    }@inputs:
     let
       system = "x86_64-linux";
       host = "nixos-home";
       username = "axel";
       profile = "nvidia-laptop";
       pkgs = import nixpkgs { inherit system; };
-    in {
+    in
+    {
       nixosConfigurations."axel@nixos-home" = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { 
-          inherit inputs; 
+        specialArgs = {
+          inherit inputs;
           inherit username;
           inherit host;
           inherit profile;
@@ -33,4 +40,4 @@
         ];
       };
     };
-  }
+}

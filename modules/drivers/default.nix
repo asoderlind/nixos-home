@@ -1,7 +1,7 @@
-{ ... } :
+{ ... }:
 {
- imports = [
-  # ./nvidia-drivers.nix
-  ./local-hardware-clock.nix
+  imports = [
+    # ./nvidia-drivers.nix
+    ./local-hardware-clock.nix
   ];
-  }
+}

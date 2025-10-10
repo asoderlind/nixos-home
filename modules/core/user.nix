@@ -1,6 +1,7 @@
-{ pkgs
-, inputs
-, ...
+{
+  pkgs,
+  inputs,
+  ...
 }:
 let
   host = "nixos-home";
@@ -30,17 +31,16 @@ in
     description = "${gitUsername}";
     extraGroups = [
       "adbusers"
-      "docker" #access to docker as non-root
-      "libvirtd" #Virt manager/QEMU access
+      "docker" # access to docker as non-root
+      "libvirtd" # Virt manager/QEMU access
       "lp"
       "networkmanager"
       "scanner"
-      "wheel" #subdo access
-      "vboxusers" #Virtual Box
+      "wheel" # subdo access
+      "vboxusers" # Virtual Box
     ];
     shell = pkgs.zsh;
     ignoreShellProgramCheck = true;
   };
   nix.settings.allowed-users = [ "${username}" ];
 }
-

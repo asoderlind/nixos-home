@@ -43,8 +43,8 @@
     cliphist # Clipboard manager using rofi menu
     cowsay # Great Fun Terminal Program
     difftastic # git
-    #discord  # Stable client 
-    #discord-canary  # beta  client 
+    #discord  # Stable client
+    #discord-canary  # beta  client
     docker-compose # Allows Controlling Docker From A Single File
     duf # Utility For Viewing Disk Usage In Terminal
     dysk # Disk space util nice formattting
@@ -91,9 +91,8 @@
     uwsm # Universal Wayland Session Manager (optional must be enabled)
     v4l-utils # Used For Things Like OBS Virtual Camera
     warp-terminal # Terminal with AI support build in
-    waypaper  # Change wallpaper
+    waypaper # Change wallpaper
     wget # Tool For Fetching Files With Links
     ytmdl # Tool For Downloading Audio From YouTube
   ];
 }
-

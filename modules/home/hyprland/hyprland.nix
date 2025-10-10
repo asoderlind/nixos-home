@@ -1,11 +1,11 @@
-{ config
-, pkgs
-, ...
+{
+  config,
+  pkgs,
+  ...
 }:
 let
   host = "nixos-home";
-  inherit
-    (import ../../../hosts/${host}/variables.nix)
+  inherit (import ../../../hosts/${host}/variables.nix)
     extraMonitorSettings
     keyboardLayout
     stylixImage
@@ -94,7 +94,7 @@ in
         disable_splash_rendering = true;
         enable_swallow = false;
         vfr = true; # Variable Frame Rate
-        vrr = 2; #Variable Refresh Rate  Might need to set to 0 for NVIDIA/AQ_DRM_DEVICES
+        vrr = 2; # Variable Refresh Rate  Might need to set to 0 for NVIDIA/AQ_DRM_DEVICES
         # Screen flashing to black momentarily or going black when app is fullscreen
         # Try setting vrr to 0
 
@@ -161,11 +161,12 @@ in
     extraConfig = "
       monitor=,preferred,auto,auto
       monitor=Virtual-1,1920x1080@60,auto,1
-      ${extraMonitorSettings}
+      ${
+            extraMonitorSettings
+          }
       # To enable blur on waybar uncomment the line below
       # Thanks to SchotjeChrisman
       #layerrule = blur,waybar
     ";
   };
 }
-

@@ -36,4 +36,3 @@ in
   console.keyMap = "${consoleKeyMap}";
   system.stateVersion = "25.05"; # Do not change!
 }
-

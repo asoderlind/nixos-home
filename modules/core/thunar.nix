@@ -1,6 +1,7 @@
-{ host
-, pkgs
-, ...
+{
+  host,
+  pkgs,
+  ...
 }:
 let
   inherit (import ../../hosts/${host}/variables.nix) thunarEnable;
@@ -19,4 +20,3 @@ in
     ffmpegthumbnailer # Need For Video / Image Preview
   ];
 }
-

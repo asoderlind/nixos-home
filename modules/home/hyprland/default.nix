@@ -10,4 +10,3 @@
     ./hypridle.nix
   ];
 }
-

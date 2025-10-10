@@ -1,4 +1,5 @@
-{host, ...}: {
+{ host, ... }:
+{
   wayland.windowManager.hyprland = {
     settings = {
       windowrule = [
@@ -75,4 +76,3 @@
     };
   };
 }
-

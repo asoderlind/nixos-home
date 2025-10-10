@@ -1,4 +1,9 @@
-{ host, config, pkgs, ... }:
+{
+  host,
+  config,
+  pkgs,
+  ...
+}:
 {
   # Import modules
   imports = [
@@ -11,6 +16,7 @@
     ./vim.nix
     ./vscode.nix
     ./waybar/waybar-simple.nix
+    ./wlogout
     ./xdg.nix
     ./zsh.nix
   ];

@@ -1,7 +1,8 @@
-{ lib
-, pkgs
-, config
-, ...
+{
+  lib,
+  pkgs,
+  config,
+  ...
 }:
 with lib;
 let
@@ -14,4 +15,3 @@ in
 
   config = mkIf cfg.enable { time.hardwareClockInLocalTime = true; };
 }
-

@@ -19,4 +19,3 @@ in
   #drivers.intel.enable = false;
   #vm.guest-services.enable = false;
 }
-
