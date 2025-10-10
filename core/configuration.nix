@@ -46,9 +46,6 @@
   # Disable X11 server (Hyprland is Wayland)
   services.xserver.enable = false;
 
-  # Hyprland (Wayland compositor)
-  programs.hyprland.enable = true;
-
   # Wayland desktop plumbing (portals)
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [
@@ -63,7 +60,7 @@
   services.greetd.enable = true;
   services.greetd.settings = {
     default_session = {
-      command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd Hyprland";
+      command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd Hyprland";
       user = "greeter";
     };
   };
@@ -90,15 +87,6 @@
     ];
     packages = with pkgs; [ ];
   };
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    firefox
-    vim
-    wget
-    git
-  ];
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
