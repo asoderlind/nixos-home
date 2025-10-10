@@ -7,14 +7,14 @@
     profiles = {
       default = {
         extensions = with pkgs.vscode-extensions; [
-          bbenoist.nix
-          jeff-hykin.better-nix-syntax
-          ms-vscode.cpptools-extension-pack
+          bbenoist.nix # Nix language support
+          jeff-hykin.better-nix-syntax # Nix language support
+          ms-vscode.cpptools-extension-pack # C/C++ support
           vscodevim.vim # Vim emulation
           mads-hartmann.bash-ide-vscode
-          tamasfe.even-better-toml
-          zainchen.json
-          shd101wyy.markdown-preview-enhanced
+          tamasfe.even-better-toml # toml language support
+          zainchen.json # json language support
+          shd101wyy.markdown-preview-enhanced # markdown preview
         ];
         userSettings = {
           # General
