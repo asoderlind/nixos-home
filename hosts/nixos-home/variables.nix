@@ -24,7 +24,7 @@
   # extraMonitorSettings = "monitor = HDMI-A-1,1920x1080@60,auto,1";
   # You can configure multiple monitors.
   # Inside the quotes, create a new line for each monitor.
-  extraMonitorSettings = "";
+  extraMonitorSettings = "monitor = eDP-1,1920x1080@144,auto,1";
 
   # Waybar Settings
   clock24h = true;
