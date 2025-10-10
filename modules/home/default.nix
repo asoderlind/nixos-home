@@ -11,6 +11,7 @@
     ./vim.nix
     ./vscode.nix
     ./waybar/waybar-simple.nix
+    ./xdg.nix
     ./zsh.nix
   ];
 }
