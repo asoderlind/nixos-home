@@ -6,14 +6,15 @@
 {
   imports = [
     ./configuration.nix
-    ./packages.nix
-    ./user.nix
     ./greetd.nix
+    ./network.nix
+    ./packages.nix
     ./services.nix
     ./system.nix
-    ./network.nix
-    ./xserver.nix
     ./stylix.nix
+    ./thunar.nix
+    ./user.nix
+    ./xserver.nix
      inputs.stylix.nixosModules.stylix
   ];
 }
