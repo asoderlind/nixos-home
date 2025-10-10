@@ -2,13 +2,15 @@
 {
   # Import modules
   imports = [
+    ./firefox
     ./git.nix
-    ./tmux.nix
-    ./shell/zsh.nix
-    ./editor/vim.nix
-    ./terminal/kitty.nix
-    ./waybar/waybar-simple.nix
-    ./browser/firefox.nix
+    ./htop.nix
     ./hyprland
+    ./kitty.nix
+    ./tmux.nix
+    ./vim.nix
+    ./vscode.nix
+    ./waybar/waybar-simple.nix
+    ./zsh.nix
   ];
 }

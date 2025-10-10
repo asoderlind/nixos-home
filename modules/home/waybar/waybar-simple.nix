@@ -20,7 +20,7 @@ with lib; {
         modules-left = [
           "custom/startmenu"
           "custom/arrow6"
-          "pulseaudio"
+          # "pulseaudio"
           "cpu"
           "memory"
           "idle_inhibitor"
