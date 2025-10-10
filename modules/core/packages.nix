@@ -35,11 +35,14 @@
     #aider-chat # AI in terminal (Optional: Client only)
     amfora # Fancy Terminal Browser For Gemini Protocol
     appimage-run # Needed For AppImage Support
+    bat # rust cat
     brave # Brave Browser
     brightnessctl # For Screen Brightness Control
     #claude-code # Claude code terminal AI (Optional: Client only)
+    cachix
     cliphist # Clipboard manager using rofi menu
     cowsay # Great Fun Terminal Program
+    difftastic # git
     #discord  # Stable client 
     #discord-canary  # beta  client 
     docker-compose # Allows Controlling Docker From A Single File
@@ -48,6 +51,7 @@
     eza # Beautiful ls Replacement
     ffmpeg # Terminal Video / Audio Editing
     file-roller # Archive Manager
+    fzf # fuzzy finder
     gedit # Simple Graphical Text Editor
     #gemini-cli # CLI AI client ONLY (optional)
     #gimp # Great Photo Editor
@@ -64,8 +68,11 @@
     lolcat # Add Colors To Your Terminal Command Output
     lshw # Detailed Hardware Information
     mpv # Incredible Video Player
+    neofetch
     ncdu # Disk Usage Analyzer With Ncurses Interface
     nixfmt-rfc-style # Nix Formatter
+    nix-prefetch-git
+    nix-tree
     nwg-displays # configure monitor configs via GUI
     onefetch # provides zsaneyos build info on current system
     pavucontrol # For Editing Audio Levels & Devices
@@ -76,6 +83,8 @@
     rhythmbox # audio player
     ripgrep # Improved Grep
     socat # Needed For Screenshots
+    tmux # terminal multiplexer
+    tree # folder structure visualizer
     unrar # Tool For Handling .rar Files
     unzip # Tool For Handling .zip Files
     usbutils # Good Tools For USB Devices

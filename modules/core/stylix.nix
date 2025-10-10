@@ -2,11 +2,14 @@
 , host
 , ...
 }:
+let
+  inherit (import ../../hosts/${host}/variables.nix) stylixImage;
+in
 {
   # Styling Options
   stylix = {
     enable = true;
-    # image = stylixImage;
+    image = stylixImage;
     polarity = "dark";
     opacity.terminal = 1.0;
     cursor = {

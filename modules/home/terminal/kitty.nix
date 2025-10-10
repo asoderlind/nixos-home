@@ -4,11 +4,6 @@ _: {
     shellIntegration.mode = "enabled";
     themeFile = "gruvbox-dark-hard";
 
-    font = {
-      name = "Maple Mono NF";
-      size = 16;
-    };
-
     keybindings."cmd+shift+enter" = "detach_window ask";
 
     extraConfig = ''
@@ -18,7 +13,7 @@ _: {
     settings = {
       allow_remote_control = "socket-only";
       background_blur = 32;
-      background_opacity = "0.85";
+      # background_opacity = "0.85";
       editor = "nvim";
       hide_window_decorations = "titlebar-only";
       placement_strategy = "center";

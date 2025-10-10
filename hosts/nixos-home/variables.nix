@@ -24,7 +24,7 @@
   # extraMonitorSettings = "monitor = HDMI-A-1,1920x1080@60,auto,1";
   # You can configure multiple monitors.
   # Inside the quotes, create a new line for each monitor.
-  # extraMonitorSettings = "
+  extraMonitorSettings = "";
 
 
   # Waybar Settings
@@ -45,7 +45,7 @@
   # Setting it here does not enable it. Kitty is installed by default
   terminal = "kitty"; # Set Default System Terminal
 
-  # keyboardLayout = "us";
+  keyboardLayout = "us";
   # consoleKeyMap = "us";
 
   # For hybrid support (Intel/NVIDIA Prime or AMD/NVIDIA)
