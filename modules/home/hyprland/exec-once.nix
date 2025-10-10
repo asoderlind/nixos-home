@@ -1,7 +1,6 @@
 { host, ... }:
 let
-  inherit
-    (import ../../../hosts/${host}/variables.nix)
+  inherit (import ../../../hosts/${host}/variables.nix)
     stylixImage
     ;
 in
