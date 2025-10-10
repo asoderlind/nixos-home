@@ -13,7 +13,7 @@ _: {
     settings = {
       allow_remote_control = "socket-only";
       background_blur = 32;
-      # background_opacity = "0.85";
+      background_opacity = "0.85";
       editor = "nvim";
       hide_window_decorations = "titlebar-only";
       placement_strategy = "center";
