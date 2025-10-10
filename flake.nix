@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    stylix.url = "github:danth/stylix/release-25.05";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
