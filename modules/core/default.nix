@@ -5,8 +5,9 @@
 }:
 {
   imports = [
-    ./configuration.nix
+    ./boot.nix
     ./greetd.nix
+    ./hardware.nix
     ./network.nix
     ./packages.nix
     ./sddm.nix
