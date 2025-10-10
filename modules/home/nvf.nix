@@ -1,7 +1,9 @@
-{ inputs
-, config
-, ...
-}: {
+{
+  inputs,
+  config,
+  ...
+}:
+{
   imports = [ inputs.nvf.homeManagerModules.default ];
 
   programs.nvf = {
@@ -223,7 +225,7 @@
       comments = {
         comment-nvim.enable = true;
       };
-      
+
       luaConfigPost = ''
         -- Nix LSP (nil) configuration for auto-eval-inputs
         local lspconfig = require('lspconfig')
@@ -236,7 +238,7 @@
             },
           },
         })
-        
+
         -- Auto-update programming wordlist on first startup
         vim.api.nvim_create_autocmd("VimEnter", {
           callback = function()
@@ -258,7 +260,7 @@
     dirtytalkUpdate = ''
       # Create the spell directory if it doesn't exist
       mkdir -p "$HOME/.local/share/nvim/site/spell"
-      
+
       # Try to run DirtytalkUpdate in headless mode with better error handling
       if ! ${config.programs.nvf.finalPackage}/bin/nvim --headless -c "DirtytalkUpdate" -c "qa!" 2>/dev/null; then
         echo "Note: DirtytalkUpdate will run automatically on first Neovim startup"
@@ -266,4 +268,3 @@
     '';
   };
 }
-

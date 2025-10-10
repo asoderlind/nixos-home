@@ -2,17 +2,30 @@
   config,
   pkgs,
   ...
-}: {
-  home.packages = with pkgs; [waybar];
+}:
+{
+  home.packages = with pkgs; [ waybar ];
 
   programs.waybar = {
     enable = true;
     settings = {
       mainBar = {
         layer = "top";
-        "modules-left" = ["hyprland/workspaces" "temperature" "hyprland/window"];
-        "modules-center" = ["custom/spacer"];
-        "modules-right" = ["tray" "cpu" "memory" "idle_inhibitor" "clock" "pulseaudio" "bluetooth"];
+        "modules-left" = [
+          "hyprland/workspaces"
+          "temperature"
+          "hyprland/window"
+        ];
+        "modules-center" = [ "custom/spacer" ];
+        "modules-right" = [
+          "tray"
+          "cpu"
+          "memory"
+          "idle_inhibitor"
+          "clock"
+          "pulseaudio"
+          "bluetooth"
+        ];
         "hyprland/window" = {
           format = "{title}";
           "max-length" = 333;
@@ -103,7 +116,11 @@
             headphone = "";
             phone = "";
             portable = "";
-            default = ["" "" ""];
+            default = [
+              ""
+              ""
+              ""
+            ];
           };
           "on-click-left" = "pavucontrol";
           input = true;
@@ -149,7 +166,7 @@
           "tooltip-format" = "{title}";
           "on-click" = "activate";
           "on-click-middle" = "close";
-          "ignore-list" = ["Alacritty"];
+          "ignore-list" = [ "Alacritty" ];
           "app_ids-mapping" = {
             firefoxdeveloperedition = "firefox-developer-edition";
           };
@@ -477,5 +494,3 @@
     '';
   };
 }
-
-
