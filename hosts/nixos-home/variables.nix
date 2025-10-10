@@ -46,7 +46,7 @@
   terminal = "kitty"; # Set Default System Terminal
 
   keyboardLayout = "us";
-  # consoleKeyMap = "us";
+  consoleKeyMap = "us";
 
   # For hybrid support (Intel/NVIDIA Prime or AMD/NVIDIA)
   # intelID = "PCI:1:0:0";
@@ -106,6 +106,6 @@
 
   # Set network hostId if required (needed for zfs)
   # Otherwise leave as-is
-  # hostId = "5ab03f50";
+  hostId = "5ab03f50";
 }
 
