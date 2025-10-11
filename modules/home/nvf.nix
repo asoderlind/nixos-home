@@ -1,6 +1,7 @@
 {
   inputs,
   config,
+  pkgs,
   ...
 }:
 {
@@ -15,7 +16,7 @@
       vimAlias = true;
       viAlias = true;
       withNodeJs = true;
-      lineNumberMode = "relNumber";
+      lineNumberMode = "number";
       enableLuaLoader = true;
       preventJunkFiles = true;
       options = {
@@ -56,6 +57,12 @@
           mode = [ "i" ];
           action = "<ESC>";
           desc = "Exit insert mode";
+        }
+        {
+          key = "<C-n>";
+          mode = [ "n" ];
+          action = "<cmd>Neotree toggle<cr>";
+          desc = "Toggle file browser";
         }
         {
           key = "<leader>nh";
@@ -256,6 +263,10 @@
       '';
     };
   };
+
+  home.packages = with pkgs; [
+    nil # Nix LSP server
+  ];
 
   home.activation = {
     dirtytalkUpdate = ''
