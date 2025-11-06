@@ -84,6 +84,7 @@
     rhythmbox # audio player
     ripgrep # Improved Grep
     socat # Needed For Screenshots
+    steam # Gaming Platform
     tmux # terminal multiplexer
     tree # folder structure visualizer
     unrar # Tool For Handling .rar Files
