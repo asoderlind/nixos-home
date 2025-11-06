@@ -46,7 +46,7 @@
     bat # rust cat
     brave # Brave Browser
     brightnessctl # For Screen Brightness Control
-    #claude-code # Claude code terminal AI (Optional: Client only)
+    claude-code # Claude code terminal AI (Optional: Client only)
     cachix
     cliphist # Clipboard manager using rofi menu
     cowsay # Great Fun Terminal Program
@@ -91,7 +91,6 @@
     rhythmbox # audio player
     ripgrep # Improved Grep
     socat # Needed For Screenshots
-    # steam is now enabled via programs.steam for proper GPU support
     tmux # terminal multiplexer
     tree # folder structure visualizer
     unrar # Tool For Handling .rar Files
