@@ -25,6 +25,13 @@
       enable = true;
       enableSSHSupport = true;
     };
+    steam = {
+      enable = true;
+      remotePlay.openFirewall = true;
+      dedicatedServer.openFirewall = true;
+      localNetworkGameTransfers.openFirewall = true;
+      gamescopeSession.enable = true;
+    };
   };
 
   nixpkgs.config.allowUnfree = true;
@@ -84,7 +91,7 @@
     rhythmbox # audio player
     ripgrep # Improved Grep
     socat # Needed For Screenshots
-    steam # Gaming Platform
+    # steam is now enabled via programs.steam for proper GPU support
     tmux # terminal multiplexer
     tree # folder structure visualizer
     unrar # Tool For Handling .rar Files
