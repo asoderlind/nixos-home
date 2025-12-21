@@ -37,10 +37,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    # Hyprland systeminfo QT  (Optional)
-    #inputs.hyprsysteminfo.packages.${pkgs.system}.default
-
-    #aider-chat # AI in terminal (Optional: Client only)
+    app2unit # launcher for noctalia-shell
     amfora # Fancy Terminal Browser For Gemini Protocol
     appimage-run # Needed For AppImage Support
     bat # rust cat
@@ -52,7 +49,6 @@
     cowsay # Great Fun Terminal Program
     difftastic # git
     #discord  # Stable client
-    #discord-canary  # beta  client
     docker-compose # Allows Controlling Docker From A Single File
     duf # Utility For Viewing Disk Usage In Terminal
     dysk # Disk space util nice formattting
@@ -61,8 +57,8 @@
     file-roller # Archive Manager
     fzf # fuzzy finder
     gedit # Simple Graphical Text Editor
-    #gemini-cli # CLI AI client ONLY (optional)
-    #gimp # Great Photo Editor
+    gpu-screen-recorder # needed for nnoctalia-shell
+    matugen # color palette generator needed for noctalia-shell
     mesa-demos # needed for inxi diag util (includes glxinfo)
     tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
     htop # Simple Terminal Based System Monitor
@@ -88,6 +84,7 @@
     picard # For Changing Music Metadata & Getting Cover Art
     pkg-config # Wrapper Script For Allowing Packages To Get Info On Others
     playerctl # Allows Changing Media Volume Through Scripts
+    power-profiles-daemon # needed for noctalia-shell power cycle
     rhythmbox # audio player
     ripgrep # Improved Grep
     socat # Needed For Screenshots
@@ -97,6 +94,7 @@
     unzip # Tool For Handling .zip Files
     usbutils # Good Tools For USB Devices
     uwsm # Universal Wayland Session Manager (optional must be enabled)
+    upower # noctalia battery
     v4l-utils # Used For Things Like OBS Virtual Camera
     warp-terminal # Terminal with AI support build in
     waypaper # Change wallpaper

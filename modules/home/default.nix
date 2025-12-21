@@ -14,13 +14,13 @@
     ./htop.nix
     ./hyprland
     ./kitty.nix
+    ./noctalia.nix
     ./nvf.nix
     ./rofi
     ./scripts
     ./stylix.nix
     ./tmux.nix
     ./vscode.nix
-    ./waybar/waybar-simple.nix
     ./wlogout
     ./xdg.nix
     ./zsh.nix
