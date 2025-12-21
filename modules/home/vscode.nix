@@ -21,6 +21,10 @@
           # General
           "editor.fontSize" = 16;
           "editor.fontFamily" = "'Jetbrains Mono', 'monospace', monospace";
+          "editor.rulers" = [
+            80
+            120
+          ];
           "editor.formatOnSave" = true;
           "terminal.integrated.fontSize" = 14;
           "terminal.integrated.fontFamily" = "'JetBrainsMono Nerd Font', 'monospace', monospace";
