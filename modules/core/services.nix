@@ -2,6 +2,7 @@
 {
   # Services to start
   services = {
+    upower.enable = true;
     libinput.enable = true; # Input Handling
     fstrim.enable = true; # SSD Optimizer
     gvfs.enable = true; # For Mounting USB & More

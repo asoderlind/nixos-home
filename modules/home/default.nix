@@ -17,7 +17,6 @@
     ./noctalia.nix
     ./nvf.nix
     ./overview.nix
-    ./rofi
     ./scripts
     ./stylix.nix
     ./tmux.nix

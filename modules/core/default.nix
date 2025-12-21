@@ -13,7 +13,7 @@ in
     ./hardware.nix
     ./network.nix
     ./packages.nix
-    (if vars.displayManager == "tui" then ./greetd.nix else ./sddm.nix)
+    ./sddm.nix
     ./security.nix
     ./services.nix
     ./system.nix

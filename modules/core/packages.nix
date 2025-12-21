@@ -73,6 +73,7 @@
     lshw # Detailed Hardware Information
     mpv # Incredible Video Player
     neofetch
+    nextcloud-client # Nextcloud client
     ncdu # Disk Usage Analyzer With Ncurses Interface
     nixfmt-rfc-style # Nix Formatter
     nix-prefetch-git
