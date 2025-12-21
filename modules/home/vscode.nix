@@ -49,7 +49,7 @@
           "telemetry.telemetryLevel" = "off";
           "update.showReleaseNotes" = false;
           # Chat
-          "chat.tools.temrinal.autoApprove" = {
+          "chat.tools.terminal.autoApprove" = {
             "nix" = true;
             "pnpm" = true;
             "python" = true;
