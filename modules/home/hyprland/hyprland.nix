@@ -65,10 +65,6 @@ in
         };
       };
 
-      gestures = {
-        workspace_swipe = true;
-      };
-
       general = {
         "$modifier" = "SUPER";
         layout = "dwindle";

@@ -10,6 +10,7 @@
     ./firefox
     ./fzf.nix
     ./git.nix
+    ./gtk.nix
     ./htop.nix
     ./hyprland
     ./kitty.nix
