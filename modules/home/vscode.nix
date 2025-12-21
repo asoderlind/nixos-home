@@ -33,10 +33,10 @@
           "files.insertFinalNewline" = true;
           "diffEditor.ignoreTrimWhitespace" = false;
           # Git
-          "git.enableCommitSigning" = true;
-          "git-graph.repository.sign.commits" = true;
-          "git-graph.repository.sign.tags" = true;
-          "git-graph.repository.commits.showSignatureStatus" = true;
+          "git.enableCommitSigning" = false;
+          "git-graph.repository.sign.commits" = false;
+          "git-graph.repository.sign.tags" = false;
+          "git-graph.repository.commits.showSignatureStatus" = false;
           # Styling
           "window.autoDetectColorScheme" = true;
           "workbench.preferredDarkColorTheme" = "Default Dark Modern";
@@ -44,6 +44,12 @@
           # Other
           "telemetry.telemetryLevel" = "off";
           "update.showReleaseNotes" = false;
+          # Chat
+          "chat.tools.temrinal.autoApprove" = {
+            "nix" = true;
+            "pnpm" = true;
+            "python" = true;
+          };
           # Vim
           "vim.handleKeys" = {
             "<C-a>" = false;
