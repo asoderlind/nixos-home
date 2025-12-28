@@ -8,10 +8,11 @@
   lib,
   ...
 }:
+let
+  noctaliaPath = inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  configDir = "${noctaliaPath}/share/noctalia-shell";
+in
 {
-  # Import the noctalia home manager module
-  imports = [ inputs.noctalia.homeModules.default ];
-
   # Import the noctalia home manager module
   imports = [ inputs.noctalia.homeModules.default ];
 
