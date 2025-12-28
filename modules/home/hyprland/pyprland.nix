@@ -9,7 +9,7 @@
     ]
 
     [scratchpads.term]
-    animation = "fromTop"
+    animation = ""
     command = "kitty --class kitty-dropterm"
     class = "kitty-dropterm"
     size = "70% 70%"

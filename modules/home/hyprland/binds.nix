@@ -13,7 +13,7 @@ in
     bind = [
       # =========== NOCTALIA ============
       "$modifier,D, exec, noctalia-shell ipc call launcher toggle"
-      "$modifier SHIFT,Return, exec, noctalia-shell ipc call launcher toggle"
+      "$modifier SHIFT,Return, exec, pypr toggle term"
       "$modifier,M, exec, noctalia-shell ipc call notifications toggleHistory"
       "$modifier,V, exec, noctalia-shell ipc call launcher clipboard"
       "$modifier ALT,P, exec, noctalia-shell ipc call settings toggle"
