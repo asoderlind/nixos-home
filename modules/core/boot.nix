@@ -2,12 +2,13 @@
   pkgs,
   config,
   ...
-}: {
+}:
+{
   boot = {
     kernelPackages = pkgs.linuxPackages_zen;
-    kernelModules = ["v4l2loopback"];
-    kernelParams = ["ipv6.disable=1"];
-    extraModulePackages = [config.boot.kernelPackages.v4l2loopback];
+    kernelModules = [ "v4l2loopback" ];
+    kernelParams = [ "ipv6.disable=1" ];
+    extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
     extraModprobeConfig = ''
       options iwlwifi power_save=0
       options iwlmvm power_scheme=1

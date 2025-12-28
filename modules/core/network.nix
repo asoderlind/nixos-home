@@ -3,14 +3,16 @@
   host,
   options,
   ...
-}: let
+}:
+let
   inherit (import ../../hosts/${host}/variables.nix) hostId;
-in {
+in
+{
   networking = {
     hostName = "${host}";
     hostId = hostId;
     networkmanager.enable = true;
-    timeServers = options.networking.timeServers.default ++ ["pool.ntp.org"];
+    timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
     interfaces.wlp7s0.mtu = 1400;
     firewall = {
       enable = true;
@@ -29,5 +31,5 @@ in {
     };
   };
 
-  environment.systemPackages = with pkgs; [networkmanagerapplet];
+  environment.systemPackages = with pkgs; [ networkmanagerapplet ];
 }

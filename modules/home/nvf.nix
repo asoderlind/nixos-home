@@ -137,7 +137,10 @@
         enableFormat = true;
         enableTreesitter = true;
         enableExtraDiagnostics = true;
-        nix.enable = true;
+        nix = {
+          enable = true;
+          format.type = [ "nixfmt" ];
+        };
         clang.enable = true;
         zig.enable = true;
         python.enable = true;
