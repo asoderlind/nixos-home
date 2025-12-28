@@ -8,16 +8,9 @@
   lib,
   ...
 }:
-let
-  system = pkgs.stdenv.hostPlatform.system;
-  noctaliaPath = inputs.noctalia.packages.${system}.default;
-  configDir = "${noctaliaPath}/share/noctalia-shell";
-in
 {
-  # Install the Noctalia package for this user (CLI, assets, etc.)
-  home.packages = [
-    noctaliaPath
-  ];
+  # Import the noctalia home manager module
+  imports = [ inputs.noctalia.homeModules.default ];
 
   # Import the noctalia home manager module
   imports = [ inputs.noctalia.homeModules.default ];
