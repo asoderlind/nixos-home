@@ -20,25 +20,21 @@ in
       "$modifier SHIFT,comma, exec, noctalia-shell ipc call settings toggle"
       "$modifier ALT,L, exec, noctalia-shell ipc call sessionMenu lockAndSuspend"
       "$modifier SHIFT,W, exec, noctalia-shell ipc call wallpaper toggle"
-      "$modifier,X, exec, noctalia-shell ipc call sessionMenu toggle"
+      "$modifier,X, exec, noctalia-shell ipc call sesionMenu toggle"
       "$modifier,C, exec, noctalia-shell ipc call controlCenter toggle"
       "$modifier CTRL,R, exec, noctalia-shell ipc call screenRecorder toggle"
       # ============= WORKSPACE OVERVIEW =============
-      "$modifier CTRL,D, exec, dock"
       "$modifier, TAB, exec, qs ipc -c overview call overview toggle"
       # ============= TERMINALS =============
       "$modifier,Return, exec, ${terminal}"
       # ============= APPLICATION LAUNCHERS =============
-      "$modifier,K, exec, qs-keybinds"
       "$modifier CTRL,C, exec, qs-cheatsheets"
       "$modifier SHIFT,K, exec, list-keybinds"
       "$modifier SHIFT,D, exec, discord"
       "$modifier ALT,W, exec, web-search"
-      "$modifier SHIFT,W, exec, qs-wallpapers-apply"
       "$modifier SHIFT,N, exec, swaync-client -rs"
       "$modifier,W, exec, ${browser}"
       "$modifier,Y, exec, kitty -e yazi"
-      "$modifier,E, exec, emopicker9000"
       "$modifier,S, exec, screenshootin"
       # ============= SCREENSHOTS =============
       "$modifier CTRL,S, exec, hyprshot -m output -o $HOME/Pictures/ScreenShots"

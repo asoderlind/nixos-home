@@ -22,6 +22,7 @@ in
     hyprpolkitagent
     hyprshot
     hyprland-qtutils # needed for banners and ANR messages
+    yazi # terminal file manager
   ];
   systemd.user.targets.hyprland-session.Unit.Wants = [
     "xdg-desktop-autostart.target"
