@@ -66,6 +66,13 @@ in
         };
       };
 
+      gestures = {
+        # New Hyprland 0.51+ gesture syntax
+        gesture = [
+          "3, horizontal, workspace"
+        ];
+      };
+
       general = {
         "$modifier" = "SUPER";
         layout = "dwindle";
