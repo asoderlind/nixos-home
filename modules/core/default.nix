@@ -12,6 +12,7 @@ in
     ./fonts.nix
     ./hardware.nix
     ./network.nix
+    ./ollama.nix
     ./packages.nix
     ./sddm.nix
     ./security.nix
