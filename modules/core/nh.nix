@@ -9,9 +9,10 @@
     enable = true;
     clean = {
       enable = true;
+      dates = "weekly"; # Run automatic cleanup weekly
       extraArgs = "--keep-since 7d --keep 5";
     };
-    flake = "/home/${username}/zaneyos";
+    flake = "/home/${username}/repos/nixos-home";
   };
 
   environment.systemPackages = with pkgs; [
