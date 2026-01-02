@@ -6,17 +6,20 @@
     enable = true;
     profiles = {
       default = {
-        extensions = with pkgs.vscode-extensions; [
-          bbenoist.nix # Nix language support
-          jeff-hykin.better-nix-syntax # Nix language support
-          ms-vscode.cpptools-extension-pack # C/C++ support
-          vscodevim.vim # Vim emulation
-          mads-hartmann.bash-ide-vscode
-          tamasfe.even-better-toml # toml language support
-          zainchen.json # json language support
-          shd101wyy.markdown-preview-enhanced # markdown preview
-          brettm12345.nixfmt-vscode # Nix formatting
-        ];
+        extensions =
+          with pkgs.vscode-extensions;
+          [
+            bbenoist.nix # Nix language support
+            jeff-hykin.better-nix-syntax # Nix language support
+            ms-vscode.cpptools-extension-pack # C/C++ support
+            vscodevim.vim # Vim emulation
+            mads-hartmann.bash-ide-vscode
+            tamasfe.even-better-toml # toml language support
+            zainchen.json # json language support
+            shd101wyy.markdown-preview-enhanced # markdown preview
+            brettm12345.nixfmt-vscode # Nix formatting
+            continue.continue # AI coding assistant with Ollama support
+          ];
         userSettings = {
           # General
           "editor.fontSize" = 16;
@@ -62,6 +65,9 @@
           };
           "vim.useSystemClipboard" = true;
           "keyboard.dispatch" = "keyCode"; # This makes VSCode respect system keyboard mappings
+          # Continue (Ollama integration)
+          "continue.telemetryEnabled" = false;
+          "continue.enableTabAutocomplete" = true;
         };
       };
     };
