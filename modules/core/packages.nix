@@ -66,6 +66,7 @@
     hyprshot # Screen capture
     eog # For Image Viewing
     inxi # CLI System Information Tool
+    keepassxc # Password manager
     killall # For Killing All Instances Of Programs
     libnotify # For Notifications
     lm_sensors # Used For Getting Hardware Temps
