@@ -26,5 +26,7 @@
     virt-viewer # View Virtual Machines
     lazydocker
     docker-client
+    docker-compose
+    arion
   ];
 }

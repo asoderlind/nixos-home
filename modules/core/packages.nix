@@ -36,7 +36,10 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  hardware.graphics.enable32Bit = true; # Required for 32-bit Wine support
+
   environment.systemPackages = with pkgs; [
+    wineWowPackages.stable # Wine with both 64-bit and 32-bit (wine32) support
     app2unit # launcher for noctalia-shell
     amfora # Fancy Terminal Browser For Gemini Protocol
     appimage-run # Needed For AppImage Support
