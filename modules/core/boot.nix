@@ -5,7 +5,9 @@
 }:
 {
   boot = {
-    kernelPackages = pkgs.linuxPackages_zen;
+    # Using 6.12 LTS kernel instead of zen due to NVIDIA driver compatibility issues with 6.18+ kernels
+    # The zen kernel (6.18+) has removed linux/of_gpio.h which breaks NVIDIA driver compilation
+    kernelPackages = pkgs.linuxPackages_6_12;
     kernelModules = [ "v4l2loopback" ];
     kernelParams = [ "ipv6.disable=1" ];
     extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
