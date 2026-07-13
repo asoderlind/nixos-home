@@ -31,6 +31,7 @@
         # ToDo: Pull default terminal from config
         "TERMINAL,kitty"
         "XDG_TERMINAL_EMULATOR,kitty"
+        "XDG_DATA_DIRS,/home/axel/.local/share:/home/axel/.nix-profile/share:/run/current-system/sw/share:/usr/local/share:/usr/share"
       ];
     };
   };
