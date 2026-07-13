@@ -34,15 +34,6 @@
         };
       };
 
-      maps = {
-        normal = {
-          "<leader>e" = {
-            action = "<CMD>Neotree toggle<CR>";
-            silent = false;
-          };
-        };
-      };
-
       diagnostics = {
         enable = true;
         config = {
@@ -52,6 +43,12 @@
       };
 
       keymaps = [
+        {
+          key = "<leader>e";
+          mode = [ "n" ];
+          action = "<CMD>Neotree toggle<CR>";
+          desc = "Toggle Neotree";
+        }
         {
           key = "jk";
           mode = [ "i" ];
@@ -145,17 +142,17 @@
         zig.enable = true;
         python.enable = true;
         markdown.enable = true;
-        ts = {
+        typescript = {
           enable = true;
           lsp.enable = true;
-          format.type = [ "prettierd" ];
+          format.type = [ "prettier" ];
           extensions.ts-error-translator.enable = true;
         };
         html.enable = true;
         lua.enable = true;
         css = {
           enable = true;
-          format.type = [ "prettierd" ];
+          format.type = [ "prettier" ];
         };
         typst.enable = true;
         rust = {

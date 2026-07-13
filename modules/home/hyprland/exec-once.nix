@@ -15,7 +15,7 @@ in
       "systemctl --user start hyprpolkitagent"
       "pypr &"
       "qs -c overview" # Start quickshell-overview daemon
-      "noctalia-shell"
+      "noctalia"
 
     ];
   };

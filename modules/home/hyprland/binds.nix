@@ -12,17 +12,16 @@ in
   wayland.windowManager.hyprland.settings = {
     bind = [
       # =========== NOCTALIA ============
-      "$modifier,D, exec, noctalia-shell ipc call launcher toggle"
+      "$modifier,D, exec, noctalia msg panel-toggle launcher"
       "$modifier SHIFT,Return, exec, pypr toggle term"
-      "$modifier,M, exec, noctalia-shell ipc call notifications toggleHistory"
-      "$modifier,V, exec, noctalia-shell ipc call launcher clipboard"
-      "$modifier ALT,P, exec, noctalia-shell ipc call settings toggle"
-      "$modifier SHIFT,comma, exec, noctalia-shell ipc call settings toggle"
-      "$modifier ALT,L, exec, noctalia-shell ipc call sessionMenu lockAndSuspend"
-      "$modifier SHIFT,W, exec, noctalia-shell ipc call wallpaper toggle"
-      "$modifier,X, exec, noctalia-shell ipc call sesionMenu toggle"
-      "$modifier,C, exec, noctalia-shell ipc call controlCenter toggle"
-      "$modifier CTRL,R, exec, noctalia-shell ipc call screenRecorder toggle"
+      "$modifier,M, exec, noctalia msg panel-toggle control-center notifications"
+      "$modifier,V, exec, noctalia msg panel-toggle clipboard"
+      "$modifier ALT,P, exec, noctalia msg settings-toggle"
+      "$modifier SHIFT,comma, exec, noctalia msg settings-toggle"
+      "$modifier ALT,L, exec, noctalia msg session lock-and-suspend"
+      "$modifier SHIFT,W, exec, noctalia msg panel-toggle wallpaper"
+      "$modifier,X, exec, noctalia msg panel-toggle session"
+      "$modifier,C, exec, noctalia msg panel-toggle control-center"
       # ============= WORKSPACE OVERVIEW =============
       "$modifier, TAB, exec, qs ipc -c overview call overview toggle"
       # ============= TERMINALS =============
