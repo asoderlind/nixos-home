@@ -9,5 +9,8 @@
 
   programs.noctalia = {
     enable = true;
+    settings = {
+      bar.default.margin_ends = 0;
+    };
   };
 }
