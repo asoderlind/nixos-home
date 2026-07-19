@@ -38,7 +38,7 @@
   hardware.graphics.enable32Bit = true; # Required for 32-bit Wine support
 
   environment.systemPackages = with pkgs; [
-    wineWowPackages.stable # Wine with both 64-bit and 32-bit (wine32) support
+    wineWow64Packages.stable # Wine with both 64-bit and 32-bit (wine32) support
     app2unit # launcher for noctalia-shell
     android-tools # adb and fastboot (replaces programs.adb)
     amfora # Fancy Terminal Browser For Gemini Protocol
@@ -76,10 +76,10 @@
     lolcat # Add Colors To Your Terminal Command Output
     lshw # Detailed Hardware Information
     mpv # Incredible Video Player
-    neofetch
+    hyfetch
     nextcloud-client # Nextcloud client
     ncdu # Disk Usage Analyzer With Ncurses Interface
-    nixfmt-rfc-style # Nix Formatter
+    nixfmt # Nix Formatter
     nix-prefetch-git
     nix-tree
     nwg-displays # configure monitor configs via GUI
