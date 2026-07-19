@@ -9,6 +9,11 @@ in
     ../../modules/core
   ];
   # Enable GPU Drivers
-  # Step 1: Basic NVIDIA support
   drivers.nvidia.enable = true;
+
+  hardware.nvidia.prime = {
+    sync.enable = true;
+    intelBusId = intelID;
+    nvidiaBusId = nvidiaID;
+  };
 }
