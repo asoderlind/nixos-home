@@ -19,7 +19,6 @@
     seahorse.enable = true;
     fuse.userAllowOther = true;
     mtr.enable = true;
-    adb.enable = true;
     hyprlock.enable = true;
     gnupg.agent = {
       enable = true;
@@ -41,6 +40,7 @@
   environment.systemPackages = with pkgs; [
     wineWowPackages.stable # Wine with both 64-bit and 32-bit (wine32) support
     app2unit # launcher for noctalia-shell
+    android-tools # adb and fastboot (replaces programs.adb)
     amfora # Fancy Terminal Browser For Gemini Protocol
     appimage-run # Needed For AppImage Support
     bat # rust cat

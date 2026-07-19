@@ -11,7 +11,6 @@ in
   # Ollama LLM Service
   services.ollama = {
     enable = true;
-    acceleration = "cuda"; # NVIDIA GPU acceleration
     package = ollama-cuda;
     # Optionally preload models on startup
     # loadModels = [ "llama3.2:3b" ];
