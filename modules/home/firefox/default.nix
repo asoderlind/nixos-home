@@ -37,6 +37,7 @@ in
     in
     {
       enable = true;
+      configPath = ".mozilla/firefox";
 
       policies = {
         DisableTelemetry = true;

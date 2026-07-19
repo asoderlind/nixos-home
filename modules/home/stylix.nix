@@ -1,4 +1,6 @@
 _: {
+  home.pointerCursor.enable = true;
+
   stylix.targets = {
     firefox.enable = false;
     ghostty.enable = false;
