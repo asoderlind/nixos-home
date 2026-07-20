@@ -38,8 +38,9 @@ in
       # Enable the Nvidia settings menu,
       # accessible via `nvidia-settings`.
       nvidiaSettings = true;
-      # Optionally, you may need to select the appropriate driver version for your specific GPU.
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
+      # GTX 1050 Ti (Pascal / GP107) is on NVIDIA's legacy 580 branch — .stable
+      # is 590+ which dropped Pascal, causing black screen after login on gen 116/117.
+      package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
     };
   };
 }
