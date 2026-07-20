@@ -7,6 +7,9 @@ in
     settings = {
       download-buffer-size = 200000000;
       auto-optimise-store = true;
+      # Cap build parallelism so heavy C++ compiles (nvidia/v4l2loopback/qt) can't OOM this 8 GB box.
+      max-jobs = 2;
+      cores = 4;
       experimental-features = [
         "nix-command"
         "flakes"
