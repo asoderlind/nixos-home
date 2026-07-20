@@ -86,9 +86,10 @@
       	    [ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env"
       	  '';
     profileExtra = ''
-      					export XDG_DATA_DIRS=$HOME/.nix-profile/share:/usr/local/share:/usr/share
-
-      					[ -f "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
+      					# NOTE: do not set XDG_DATA_DIRS here. This is a login-shell file, so it
+      					# runs after /etc/zshenv and would clobber the NixOS-provided value.
+      					# Dropping /run/current-system/sw/share breaks uwsm's lookup of
+      					# wayland-sessions/hyprland.desktop -> black screen after login.
 
       					export PATH=$PATH:$HOME/.local/bin
 

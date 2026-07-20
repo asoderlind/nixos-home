@@ -47,7 +47,13 @@ in
       "vboxusers" # Virtual Box
     ];
     shell = pkgs.zsh;
-    ignoreShellProgramCheck = true;
   };
+
+  # Required whenever a user's shell is zsh: this generates /etc/zshenv etc.,
+  # which source /etc/set-environment. Without it, login zsh never exports
+  # XDG_DATA_DIRS, so uwsm cannot find wayland-sessions/hyprland.desktop and
+  # the uwsm session dies at login with a black screen.
+  programs.zsh.enable = true;
+
   nix.settings.allowed-users = [ "${username}" ];
 }
