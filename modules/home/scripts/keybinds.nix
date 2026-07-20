@@ -12,6 +12,6 @@ pkgs.writeShellScriptBin "list-keybinds" ''
   display_keybinds=$(echo "$keybinds" | sed 's/\$modifier/SUPER/g')
 
   # use rofi to display the keybinds with the modified content
-  echo "$display_keybinds" | rofi -dmenu -i -config ~/.config/rofi/config-long.rasi -mesg "$msg"
+  echo "$display_keybinds" | rofi -dmenu -i -mesg "$msg"
 
 ''

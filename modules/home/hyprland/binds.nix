@@ -1,12 +1,10 @@
 { host, ... }:
 let
-  #  inherit
-  #    (import ../../hosts/${host}/variables.nix)
-  #    browser
-  #    terminal
-  #    ;
-  terminal = "kitty";
-  browser = "firefox";
+  inherit
+    (import ../../../hosts/${host}/variables.nix)
+    browser
+    terminal
+    ;
 in
 {
   wayland.windowManager.hyprland.settings = {
@@ -33,7 +31,7 @@ in
       "$modifier ALT,W, exec, web-search"
       "$modifier SHIFT,N, exec, swaync-client -rs"
       "$modifier,W, exec, ${browser}"
-      "$modifier,Y, exec, kitty -e yazi"
+      "$modifier,Y, exec, ${terminal} -e yazi"
       "$modifier,S, exec, screenshootin"
       # ============= SCREENSHOTS =============
       "$modifier CTRL,S, exec, hyprshot -m output -o $HOME/Pictures/ScreenShots"

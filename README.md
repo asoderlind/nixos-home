@@ -6,7 +6,8 @@
 * DE - Hyprland
 * Terminal - Kitty
 * Editor - VSCode / [nvf](https://github.com/NotAShelf/nvf?tab=readme-ov-file)
-* Top Bar - [waybar](https://github.com/Alexays/Waybar)
+* Shell/Bar - [noctalia-shell](https://github.com/noctalia-dev/noctalia-shell)
+* Launcher - [rofi](https://github.com/davatorium/rofi)
 
 ## Inspiration
 

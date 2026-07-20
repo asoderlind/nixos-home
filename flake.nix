@@ -27,9 +27,7 @@
 
   outputs =
     {
-      self,
       nixpkgs,
-      home-manager,
       ...
     }@inputs:
     let
@@ -37,7 +35,6 @@
       host = "nixos-home";
       username = "axel";
       profile = "nvidia-laptop";
-      pkgs = import nixpkgs { inherit system; };
     in
     {
       nixosConfigurations."axel@nixos-home" = nixpkgs.lib.nixosSystem {

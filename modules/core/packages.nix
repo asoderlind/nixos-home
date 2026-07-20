@@ -63,7 +63,6 @@
     gpu-screen-recorder # needed for nnoctalia-shell
     matugen # color palette generator needed for noctalia-shell
     mesa-demos # needed for inxi diag util (includes glxinfo)
-    tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
     htop # Simple Terminal Based System Monitor
     hyprpicker # Color Picker
     hyprshot # Screen capture

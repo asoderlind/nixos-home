@@ -21,18 +21,21 @@
       theme =
         let
           inherit (config.lib.formats.rasi) mkLiteral;
+          # stylix.base16Scheme is a generated path when the palette comes from an
+          # image, so it cannot be indexed. lib.stylix.colors is the scheme attrset.
+          colors = config.lib.stylix.colors.withHashtag;
         in
         {
           "*" = {
-            bg = mkLiteral "#${config.stylix.base16Scheme.base00}";
-            bg-alt = mkLiteral "#${config.stylix.base16Scheme.base09}";
-            foreground = mkLiteral "#${config.stylix.base16Scheme.base01}";
-            selected = mkLiteral "#${config.stylix.base16Scheme.base08}";
-            active = mkLiteral "#${config.stylix.base16Scheme.base0B}";
-            text-selected = mkLiteral "#${config.stylix.base16Scheme.base00}";
-            text-color = mkLiteral "#${config.stylix.base16Scheme.base05}";
-            # border-color = mkLiteral "#${config.stylix.base16Scheme.base0F}";
-            urgent = mkLiteral "#${config.stylix.base16Scheme.base0E}";
+            bg = mkLiteral colors.base00;
+            bg-alt = mkLiteral colors.base09;
+            foreground = mkLiteral colors.base01;
+            selected = mkLiteral colors.base08;
+            active = mkLiteral colors.base0B;
+            text-selected = mkLiteral colors.base00;
+            text-color = mkLiteral colors.base05;
+            # border-color = mkLiteral colors.base0F;
+            urgent = mkLiteral colors.base0E;
           };
           "window" = {
             transparency = "real";
@@ -60,7 +63,7 @@
           "imagebox" = {
             padding = mkLiteral "20px";
             background-color = mkLiteral "transparent";
-            background-image = mkLiteral ''url("~/repos/nixos-home/wallpapers/mountainscapedark.jpg", height)'';
+            background-image = mkLiteral ''url("${../../../wallpapers/mountainscapedark.jpg}", height)'';
             orientation = mkLiteral "vertical";
             children = map mkLiteral [
               "inputbar"
